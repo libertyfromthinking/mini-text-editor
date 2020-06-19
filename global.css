@@ -12,6 +12,7 @@ div {
 
 #words {
 	width: 400px;
+	cursor: default;
 }
 
 #added {
