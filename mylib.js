@@ -85,6 +85,7 @@ function removeWord(){
 	remove = document.getElementsByClassName(clsName)
 	added.removeChild(remove[1])
 	remove[0].style.color = ""
+	remove[0].style.fontWeight = ""
 	undoStack.push({'remove':clsName})
 }
 
