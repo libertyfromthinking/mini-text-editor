@@ -44,7 +44,7 @@ function randomString() {
 
 // 추가할 단어를 임의로 선택할 때의 동작, 빨간색으로 바꾸고 selectedWords에 추가하거나 color 속성값을 없애고 selectedWords에서도 삭제함
 function changeToRed(){
-	if (this.style.color=="#f58720"){
+	if (this.style.color=="rgb(245, 135, 32)"){
 		this.style.color=""
 		delete selectedWords[this.className]
 		
@@ -111,6 +111,8 @@ function undo(){
 				
 				for(var i in obj){
 					remove = document.getElementsByClassName(i)[1].childNodes[1].click()
+					document.getElementsByClassName(i)[0].style.color="#f58720"
+					selectedWords[i] = true
 					undoStack.pop()
 				}
 				break
